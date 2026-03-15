@@ -73,3 +73,15 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Visual Studio
+.vs/
+*.vsidx
+*.suo
+
+# Unity cache (pro jistotu)
+Library/
+Temp/
+Obj/
+Build/
+Builds/
