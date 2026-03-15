@@ -1,0 +1,61 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5be51871efa6c3e4eae1703925c8f5ac, type: 3}
+  m_Name: MetalDetectingSceneTable
+  m_EditorClassIdentifier: 
+  m_SharedTableData: {fileID: 11400000, guid: e0d42265492ce85438b8c17847118906, type: 2}
+  m_Tables:
+  - {fileID: 11400000, guid: 61f0569e9fcdd2a4e8d8ec3b0b8d38e6, type: 2}
+  - {fileID: 11400000, guid: 18e8000ad987f2b46a54029f4b749d33, type: 2}
+  m_Extensions:
+  - rid: 3590648967049510926
+  m_Group: String Table
+  references:
+    version: 2
+    RefIds:
+    - rid: 3590648967049510926
+      type: {class: GoogleSheetsExtension, ns: UnityEditor.Localization.Plugins.Google, asm: Unity.Localization.Editor}
+      data:
+        m_Collection: {fileID: 11400000}
+        m_SheetsServiceProvider: {fileID: 11400000, guid: 076bd0caa8ff40845aadc86274d8c983, type: 2}
+        m_SpreadsheetId: 1hG_5zCaZNHfH7yoXepUNYa5lsYNleTxGsT2V9vnxlac
+        m_SheetId: 602345593
+        m_Columns:
+        - rid: 3590648967049510935
+        - rid: 3590648967049510936
+        - rid: 3590648967049510937
+        - rid: 3590648967049510938
+        m_RemoveMissingPulledKeys: 1
+    - rid: 3590648967049510935
+      type: {class: KeyColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: A
+    - rid: 3590648967049510936
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: B
+        m_LocaleIdentifier:
+          m_Code: cs
+        m_IncludeComments: 0
+    - rid: 3590648967049510937
+      type: {class: LocaleColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: C
+        m_LocaleIdentifier:
+          m_Code: en
+        m_IncludeComments: 0
+    - rid: 3590648967049510938
+      type: {class: LocaleCommentColumn, ns: UnityEditor.Localization.Plugins.Google.Columns, asm: Unity.Localization.Editor}
+      data:
+        m_Column: D
+        m_LocaleIdentifier:
+          m_Code: 

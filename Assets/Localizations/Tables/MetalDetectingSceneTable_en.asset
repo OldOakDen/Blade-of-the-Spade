@@ -1,0 +1,237 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: MetalDetectingSceneTable_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: e0d42265492ce85438b8c17847118906, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 57029160960
+    m_Localized: Press <color=red>the spacebar</color> to switch to digging mode.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 785877561344
+    m_Localized: "\rPress <color=red>the spacebar</color> to return to detecting 
+      mode."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781233385472
+    m_Localized: Welcome to the site! Explore it and find valuable artifacts!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781254356992
+    m_Localized: Move forward, backward, and sideways - use the <color=red>WSAD</color>
+      keys.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781258551296
+    m_Localized: Hold the <color=red>Shift</color> key along with the directional
+      keys for faster movement.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781258551297
+    m_Localized: Mouse movement - turn right and left.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781258551298
+    m_Localized: The left mouse button speeds up coil swinging for more precise target
+      localization.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646981177344
+    m_Localized: The right mouse button toggles the <color=green>PINPOINT</color>
+      mode on and off.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371648
+    m_Localized: Left mouse button - dig at the circular marked spot.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371649
+    m_Localized: Move the coil slowly and find the strongest signal for safe retrieval
+      of the item.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371650
+    m_Localized: Great, you found something!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371651
+    m_Localized: Hold down the right mouse button and move the mouse to rotate the
+      object.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371652
+    m_Localized: Left-clicking on a piece of soil will remove it.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371653
+    m_Localized: Zoom in and out on the object using the mouse wheel.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371654
+    m_Localized: Try to identify the uncleaned object and earn bonus points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371655
+    m_Localized: You've cleaned the entire object. Good job!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371656
+    m_Localized: You failed to identify the found item.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371657
+    m_Localized: You have correctly identified all categories!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857024
+    m_Localized: Obtain more information about the object in your workspace to earn
+      additional points.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857025
+    m_Localized: I don't know
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857026
+    m_Localized: Stone Age (3,000+ BCE)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857027
+    m_Localized: Bronze Age (3,000BCE-1,200BCE)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857028
+    m_Localized: Iron Age (1,200BCE-500CE)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857029
+    m_Localized: Classical Antiquity (500BCE-500CE)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857030
+    m_Localized: Middle Ages (500CE-1500CE)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857031
+    m_Localized: Early Modern Period (1500CE-1800CE)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857032
+    m_Localized: Modern Period (1800CE-Present)
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857033
+    m_Localized: Gold
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857034
+    m_Localized: Silver
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857035
+    m_Localized: Bronze
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857036
+    m_Localized: Copper / Brass
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857037
+    m_Localized: Aluminium
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857038
+    m_Localized: Lead
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857039
+    m_Localized: Iron
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857040
+    m_Localized: Coins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857041
+    m_Localized: Jewelry
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857042
+    m_Localized: Militaries
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857043
+    m_Localized: Sculptures
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857044
+    m_Localized: Usual
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857045
+    m_Localized: Trash
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305600
+    m_Localized: Choose Period
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305601
+    m_Localized: Choose Material
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305602
+    m_Localized: Choose Type
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305603
+    m_Localized: Bonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305604
+    m_Localized: Total Bonus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305605
+    m_Localized: Accuracy of artifact localization
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42974819342610432
+    m_Localized: Unidentified object
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43043444678193152
+    m_Localized: Select individual categories and remove pieces of dirt by clicking
+      on them.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45190505678761984
+    m_Localized: Grid 1cm On/Off
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49915174570946560
+    m_Localized: Gradually uncover the object. Maybe you'll recognize what you found.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52403600616583168
+    m_Localized: Identify categories as you clean the object. Observe its shape and
+      material.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

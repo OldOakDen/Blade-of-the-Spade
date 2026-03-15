@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: f0a7fd7799bd00d47a523f22edac54a2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - soilDropEffect: {fileID: 3456991644714994006, guid: d2dc3c576fa6f74428ac0c2b72fb8998, type: 3}
+  - environmentParent: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

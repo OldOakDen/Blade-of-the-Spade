@@ -1,0 +1,4 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="FindCounter" text="POKUS" style="-unity-font: url(&apos;project://database/Assets/Fonts/timesi.ttf?fileID=12800000&amp;guid=8bc7a9a3630cbdd4d80aa345afb7a1ab&amp;type=3#timesi&apos;); height: 201px; font-size: 40px; -unity-text-align: upper-right; text-overflow: clip; background-color: rgba(169, 207, 188, 0); -unity-font-style: bold; color: rgb(169, 207, 188); display: flex; visibility: visible;" />
+    <ui:Label tabindex="-1" parse-escape-sequences="true" display-tooltip-when-elided="true" name="DebugText" style="color: rgb(255, 255, 255); -unity-font-style: bold; -unity-font: url(&apos;project://database/Assets/Fonts/times.ttf?fileID=12800000&amp;guid=ad57ecd55c5f4fc4c885f01da79e2883&amp;type=3#times&apos;); height: 125px;" />
+</ui:UXML>

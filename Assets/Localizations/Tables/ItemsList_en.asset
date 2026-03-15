@@ -1,0 +1,470 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ItemsList_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: ba6e717029384f349abeedbd4e09fd62, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1446836957184
+    m_Localized: Stater
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947072
+    m_Localized: Large Celtic gold stater.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446874705920
+    m_Localized: Eighth of a Stater
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947073
+    m_Localized: 1/8 of a Celtic gold stater.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446874705921
+    m_Localized: Aluminum commemorative ring
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947074
+    m_Localized: An aluminum commemorative ring from 1914, likely made by a soldier
+      as a memento of the beginning of World War I.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446874705922
+    m_Localized: Denarius
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947075
+    m_Localized: 'Silver Denarius of the Roman Republic, Monier: M. Atilius Saranus,
+      148BCE, 19.5mm, 3.8g'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900224
+    m_Localized: A medallion made from a coin
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947076
+    m_Localized: The medallion is a reworked silver coin from 1765. On the reverse
+      side of the medallion, there is a depiction of the bust of Bavarian Elector
+      Maximilian III Joseph Wittelsbach (1727-1777).
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900225
+    m_Localized: Boar Figurine
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947077
+    m_Localized: "Bronze boar figurine from the La T\xE8ne period."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900226
+    m_Localized: Celtic bracelet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947078
+    m_Localized: 'Simple bronze bracelet from the Celtic period. Diameter: 6,7 cm.
+      Weight: ca. 50 g.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900227
+    m_Localized: Small bronze hook
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947079
+    m_Localized: "A bronze hook of uncertain use from the La T\xE8ne period, ca.10
+      cm, ca.70g."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900228
+    m_Localized: Part of an axe
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947080
+    m_Localized: 'A fragment of a bronze axe from over 1000 years before our era.
+      Weight: ca. 235 g.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900229
+    m_Localized: Possible Bronze Age Ingot
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947081
+    m_Localized: A complete copper alloy probable ingot of possible Bronze Age or
+      later dating (2300 BC to 1500 AD). Weight approximately 46.2 grams.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900230
+    m_Localized: A cartridge case from 1936
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947082
+    m_Localized: An incomplete cartridge case (7.92 x 57 mm) from the Czechoslovakian
+      company Sellier & Bellot, dated 1936.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900231
+    m_Localized: Rifle Cartridge Case
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947083
+    m_Localized: The ammunition evidently misfired, as the bullet is still intact,
+      and the primer is damaged.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900232
+    m_Localized: Remainder of a shotgun shell
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947084
+    m_Localized: Heavily damaged remainder of a shotgun shell for a hunting shotgun.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900233
+    m_Localized: Small calibre cartridge case
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947085
+    m_Localized: An old and damaged small-caliber cartridge case.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900234
+    m_Localized: Copper kreuzer
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947086
+    m_Localized: 'Maria Theresa Kreuzer from the year 1761. Diameter: 25 mm. Weight:
+      11 grams.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900235
+    m_Localized: 1 Czechoslovak koruna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947087
+    m_Localized: 'Coins of Czechoslovakia. Currency unit: koruna. Year of issue:
+      1959. Material: copper, aluminum, manganese (91+8+1). Edge: ribbed. Diameter:
+      23 mm. Weight: 4 g.'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900236
+    m_Localized: Pull Tab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947088
+    m_Localized: Pull tab from an aluminum beverage can.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900237
+    m_Localized: Pull tab
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947089
+    m_Localized: An unidentified aluminum pull tab from a beer bottle.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900238
+    m_Localized: Crushed aluminum foil
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947090
+    m_Localized: "A heavily deformed and damaged aluminum p\xE2t\xE9 container."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900239
+    m_Localized: Lead Bullet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947091
+    m_Localized: Bullet from a percussion firearm, probably from the Thirty Years'
+      War period.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900240
+    m_Localized: Large Lead Bullet
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947092
+    m_Localized: Lead bullet from a carbine originating from the 19th century.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900241
+    m_Localized: Spindle whorl
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947093
+    m_Localized: A spindle whorl made of lead or its alloy, most likely dated to
+      the Middle Ages. It has a circular shape and a rectangular cross-section. The
+      central hole was cast slightly off-center.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900242
+    m_Localized: Lead Crucifix
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947094
+    m_Localized: Medieval lead cross probably worn around the neck.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900243
+    m_Localized: Iron fibula
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947095
+    m_Localized: Iron Celtic fibula.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900244
+    m_Localized: Forged Nail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947096
+    m_Localized: "Forged nail from the La T\xE8ne period, probably from a vehicle."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900245
+    m_Localized: Bent Forged Nail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947097
+    m_Localized: Period-damaged Celtic nail.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900246
+    m_Localized: Forged Nail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947098
+    m_Localized: "A well-preserved iron forged nail from the La T\xE8ne period."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900247
+    m_Localized: Crown Cap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947099
+    m_Localized: "Beer bottle cap from the \u010Cern\xE1 Hora brewery."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900248
+    m_Localized: Crown Cap
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947100
+    m_Localized: Cap probably from a beer bottle, indeterminable.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900249
+    m_Localized: Farrier Nail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947101
+    m_Localized: Forged nail for attaching horseshoes.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900250
+    m_Localized: Nail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947102
+    m_Localized: Modern steel nail.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900251
+    m_Localized: Fragment of a Nail
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947103
+    m_Localized: Fragment of a modern steel nail.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900252
+    m_Localized: Part of a pocket knife.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947104
+    m_Localized: Iron fragment, likely from a folding pocket knife, on which the
+      handle was attached.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677142
+    m_Localized: '"Iron fibula, Poggio Pinci, Asciano" (https://skfb.ly/owM9J) by
+      Global Digital Heritage and GDH-Afrika is licensed under Creative Commons Attribution
+      (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2423805057429504
+    m_Localized: '"Celtic stater" (https://skfb.ly/oGtrP) by Allard Pierson is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677143
+    m_Localized: '"old rusty nail" (https://skfb.ly/oJLC8) by andycz is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677145
+    m_Localized: '"Rusty nail" (https://skfb.ly/o98PB) by tumgb is licensed under
+      Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677148
+    m_Localized: '"Nail_new Lp_draft" (https://skfb.ly/oPVUY) by alexei_g is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677149
+    m_Localized: '"Nail_new Lp_draft" (https://skfb.ly/oPVUY) by alexei_g is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677150
+    m_Localized: '"Nail_new Lp_draft" (https://skfb.ly/oPVUY) by alexei_g is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677122
+    m_Localized: '"Silver Denarius, Roman Republic" (https://skfb.ly/oIHWI) by Frank
+      McMains is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677146
+    m_Localized: '"Stack Of Nuka-Cola Caps" (https://skfb.ly/oXnQt) by jcwiki is
+      licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677147
+    m_Localized: '"Stack Of Nuka-Cola Caps" (https://skfb.ly/oXnQt) by jcwiki is
+      licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677124
+    m_Localized: "Eberfigur / Boar figurine by LWL-Museum f\xFCr Arch\xE4ologie,
+      Herne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677129
+    m_Localized: '"Cartridge 1936" (https://skfb.ly/o8tAs) by P. Romero Pellitero
+      is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677141
+    m_Localized: "CC0 Public Domain, Archaeological Museum in Krak\xF3w, https://muzea.malopolska.pl/en/objects-list/1574"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677125
+    m_Localized: CC0 Public Domain, LWL-Archaeologie, https://sketchfab.com/3d-models/037-armring-bangle-926c94add9b14cf38db173305a730607
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677126
+    m_Localized: '"Small bronze hook, Cerro de las Cabezas" (https://skfb.ly/oHpsZ)
+      by Global Digital Heritage and GDH-Afrika is licensed under Creative Commons
+      Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677127
+    m_Localized: '"Wmid-80coo9 - Bronze Age Palstave" (https://skfb.ly/ozHTL) by
+      The Potteries Museum & Art Gallery is licensed under Creative Commons Attribution
+      (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677128
+    m_Localized: '"wmid-7324d0 - Possible Bronze Age Ingot" (https://skfb.ly/oUwKE)
+      by The Potteries Museum & Art Gallery is licensed under Creative Commons Attribution
+      (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677138
+    m_Localized: '"Melted Lead Shot" (https://skfb.ly/os9sR) by Florida Public Archaeology
+      Network is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677139
+    m_Localized: '"Merrill Carbine Bullet" (https://skfb.ly/6SBqS) by BostonArchaeology
+      is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677140
+    m_Localized: '"Wmid-1a88d9 - Spindle whorl" (https://skfb.ly/oRD6s) by Staffs
+      FLO is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677134
+    m_Localized: '"Coin of Czechoslovakia (1959)" (https://skfb.ly/6YAxE) by Igor
+      Denisov is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677123
+    m_Localized: "CC0 Public Domain, Virtual Museums of Ma\u0142opolska, https://sketchfab.com/3d-models/medallion-for-a-beadwork-necklace-142d386fba0b419ead86627554e4e731\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677133
+    m_Localized: Item from a private collection. Exclusive content. The owner wishes
+      to remain anonymous.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677130
+    m_Localized: '"Bullet with cartridge (replica)" (https://skfb.ly/oMwPZ) by kova484
+      is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677151
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677131
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677132
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677137
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677135
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677136
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677121
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27208199127166976
+    m_Localized: Aluminum buckle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27208199148138496
+    m_Localized: A buckle made of aluminum, likely from a soldier's military equipment
+      from World War I or World War II.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27208199148138497
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677144
+    m_Localized: Item from a private collection.
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

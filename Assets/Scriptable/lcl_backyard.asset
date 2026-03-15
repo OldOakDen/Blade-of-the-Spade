@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b048933c4d70cc48bb37e978ce8dbee, type: 3}
+  m_Name: lcl_backyard
+  m_EditorClassIdentifier: 
+  id: backyard
+  itemConfigurations:
+  - prefab: {fileID: 4983561786268481684, guid: 07394b2ab621c2f4d9dc5ab89a2e4a18, type: 3}
+    count: 40
+    depthRange: {x: 1, y: -1.2}

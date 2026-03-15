@@ -1,0 +1,480 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: ItemsList_cs
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: ba6e717029384f349abeedbd4e09fd62, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 1446836957184
+    m_Localized: "Stat\xE9r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446874705920
+    m_Localized: "Osmina stat\xE9ru"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446874705921
+    m_Localized: "Hlin\xEDkov\xFD pam\u011Btn\xED prsten"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446874705922
+    m_Localized: "Den\xE1r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900224
+    m_Localized: "Medailon vyroben\xFD z mince"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900225
+    m_Localized: Plastika kance
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900226
+    m_Localized: "Keltsk\xFD n\xE1ramek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900227
+    m_Localized: "Mal\xFD bronzov\xFD h\xE1\u010Dek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900228
+    m_Localized: "\u010C\xE1st sekery"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900229
+    m_Localized: "Mo\u017En\xFD bronzov\xFD ingot"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900230
+    m_Localized: "N\xE1bojnice z roku 1936"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900231
+    m_Localized: "Pu\u0161kov\xE1 n\xE1bojnice"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900232
+    m_Localized: "Zbytek brokov\xE9 n\xE1bojnice"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900233
+    m_Localized: "N\xE1bojnice do malor\xE1\u017Eky"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900234
+    m_Localized: "M\u011Bd\u011Bn\xFD krejcar"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900235
+    m_Localized: "1 koruna \u010Deskoslovensk\xE1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900236
+    m_Localized: "Otv\xEDrac\xED o\u010Dko"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900237
+    m_Localized: "Trhac\xED z\xE1tka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900238
+    m_Localized: "Poma\u010Dkan\xE1 hlin\xEDkov\xE1 f\xF3lie"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900239
+    m_Localized: "Olov\u011Bn\xE1 kulka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900240
+    m_Localized: "Velk\xE1 olov\u011Bn\xE1 kulka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900241
+    m_Localized: "P\u0159eslen"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900242
+    m_Localized: "Olov\u011Bn\xFD k\u0159\xED\u017Eek"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900243
+    m_Localized: "\u017Delezn\xE1 spona"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900244
+    m_Localized: "Kovan\xFD h\u0159eb"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900245
+    m_Localized: "Ohnut\xFD kovan\xFD h\u0159eb"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900246
+    m_Localized: "Kovan\xFD h\u0159eb"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900247
+    m_Localized: "Korunkov\xFD uz\xE1v\u011Br"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900248
+    m_Localized: "Korunkov\xFD uz\xE1v\u011Br"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900249
+    m_Localized: "Kov\xE1\u0159sk\xFD h\u0159eb"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900250
+    m_Localized: "H\u0159eb\xEDk"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900251
+    m_Localized: "Fragment h\u0159eb\xEDku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1446878900252
+    m_Localized: "\u010C\xE1st kapesn\xEDho no\u017Ee"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947072
+    m_Localized: "Velk\xFD keltsk\xFD zlat\xFD stat\xE9r."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947073
+    m_Localized: "1/8 zlat\xE9ho keltsk\xE9ho stat\xE9ru."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947074
+    m_Localized: "Hlin\xEDkov\xFD pam\u011Btn\xED prsten z roku 1914, pravd\u011Bpodobn\u011B
+      vyroben\xFD voj\xE1kem jako upom\xEDnka na za\u010D\xE1tek prvn\xED sv\u011Btov\xE9
+      v\xE1lky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947075
+    m_Localized: "St\u0159\xEDbrn\xFD den\xE1r \u0158\xEDmsk\xE9 republiky, ra\u017Een:
+      M. Atilius Saranus, 148 p\u0159. n. l., 19.5 mm, 3.8 g"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947076
+    m_Localized: "Medailon je p\u0159epracovan\xE1 st\u0159\xEDbrn\xE1 mince z roku
+      1765. Na rubov\xE9 stran\u011B medailonu je vyobrazeno poprs\xED bavorsk\xE9ho
+      kurfi\u0159ta Maxmili\xE1na III. Josefa Wittelsbacha (1727-1777) ."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947077
+    m_Localized: "Bronzov\xE1 so\u0161ka kance z doby lat\xE9nsk\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947078
+    m_Localized: "Jednoduch\xFD bronzov\xFD n\xE1ramek z doby kelt\u016F. Pr\u016Fm\u011Br:
+      6,7 cm. Hmotnost: cca 50 g."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947079
+    m_Localized: "Bronzov\xFD h\xE1\u010Dek neur\u010Dit\xE9ho pou\u017Eit\xED z
+      doby lat\xE9nsk\xE9, asi 10 cm a 70 gram\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947080
+    m_Localized: "Fragment bronzov\xE9 sekery z obdob\xED v\xEDce ne\u017E 1000 let
+      p\u0159ed na\u0161\xEDm letopo\u010Dtem. V\xE1ha 235 gram\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947081
+    m_Localized: "Kompletn\xED pravd\u011Bpodobn\xFD ingot z m\u011Bd\u011Bn\xE9
+      slitiny, pravd\u011Bpodobn\u011B z doby bronzov\xE9 nebo pozd\u011Bj\u0161\xED
+      (2300 p\u0159. n. l. a\u017E 1500 n. l.). V\xE1ha p\u0159ibli\u017En\u011B
+      46.2 gram\u016F."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947082
+    m_Localized: "Ne\xFApln\xE1 n\xE1bojnice st\u0159eliva (7,92 x 57 mm) poch\xE1zej\xEDc\xEDho
+      od \u010Deskoslovensk\xE9 firmy Sellier & Bellot z roku 1936."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947083
+    m_Localized: "Munice, kter\xE1 evidentn\u011B selhala p\u0159i v\xFDst\u0159elu,
+      nebo\u0165 st\u0159ela je st\xE1le sou\u010D\xE1st\xED a z\xE1palka je po\u0161kozen\xE1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947084
+    m_Localized: "Siln\u011B po\u0161kozen\xFD zbytek n\xE1bojnice do loveck\xE9
+      brokovnice."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947085
+    m_Localized: "Star\xE1 a po\u0161kozen\xE1 n\xE1bojnice do zbran\u011B mal\xE9
+      r\xE1\u017Ee."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947086
+    m_Localized: "Krejcar Marie Terezie z roku 1761. Pr\u016Fm\u011Br: 25 mm. Hmotnost:
+      11 gr."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947087
+    m_Localized: "Mince \u010Ceskoslovenska. Pen\u011B\u017En\xED jednotka: koruna.
+      Rok vyd\xE1n\xED: 1959. Materi\xE1l: m\u011Bd\u02C7,hlin\xEDk, mangan (91+8+1).
+      Okraj: \u017Eebrovan\xFD. Pr\u016Fm\u011Br: 23 mm. Hmotnost: 4 gr."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947088
+    m_Localized: "O\u010Dko z hlin\xEDkov\xE9 plechovky na n\xE1poje."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947089
+    m_Localized: "Neidentifikovateln\xE1 trhac\xED hlin\xEDkov\xE1 z\xE1tka od pivn\xED
+      l\xE1hve."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947090
+    m_Localized: "Siln\u011B zdeformovan\xE1 a po\u0161kozen\xE1 hlin\xEDkov\xE1
+      vani\u010Dka od pa\u0161tiky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947091
+    m_Localized: "Kulka z perkusn\xED zbran\u011B pravd\u011Bpodobn\u011B z obdob\xED
+      30ti let\xE9 v\xE1lky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947092
+    m_Localized: "Olov\u011Bn\xE1 kulka z karabiny poch\xE1zej\xEDc\xED z 19. stolet\xED."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947093
+    m_Localized: "P\u0159eslen z olova nebo jeho slitiny, datovan\xFD nejsp\xED\u0161
+      do st\u0159edov\u011Bku. M\xE1 kruhov\xFD tvar a obd\xE9ln\xEDkov\xFD pr\u016F\u0159ez.
+      St\u0159edov\xFD otvor byl odlit m\xEDrn\u011B mimo st\u0159ed."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947094
+    m_Localized: "St\u0159edov\u011Bk\xFD olov\u011Bn\xFD k\u0159\xED\u017Eek pravd\u011Bpodobn\u011B
+      no\u0161en\xFD na krku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947095
+    m_Localized: "\u017Delezn\xE1 keltsk\xE1 \u0161atn\xED spona."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947096
+    m_Localized: "Kovan\xFD h\u0159eb z doby lat\xE9nsk\xE9, pravd\u011Bpodobn\u011B
+      z povozu."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947097
+    m_Localized: "Dobov\u011B po\u0161kozen\xFD keltsk\xFD h\u0159eb."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947098
+    m_Localized: "Zachoval\xFD \u017Eelezn\xFD kovan\xFD h\u0159eb z doby lat\xE9nsk\xE9."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947099
+    m_Localized: "Z\xE1tka z pivn\xED lahve pivovaru \u010Cern\xE1 Hora."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947100
+    m_Localized: "Z\xE1tka pravd\u011Bpodobn\u011B z pivn\xED l\xE1hve. Bl\xED\u017Ee
+      neur\u010Diteln\xE1."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947101
+    m_Localized: "Kovan\xFD h\u0159eb pro p\u0159ipev\u0148ov\xE1n\xED podkov."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947102
+    m_Localized: "Ocelov\xFD h\u0159eb\xEDk novodob\xFD."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947103
+    m_Localized: "\xDAlomek ocelov\xE9ho novodob\xE9ho h\u0159eb\xEDku."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3871970947104
+    m_Localized: "\u017Delezn\xFD \xFAlomek pravd\u011Bpodobn\u011B zav\xEDrac\xEDho
+      kapesn\xEDho no\u017Ee, na kter\xE9m byla p\u0159ipevn\u011Bna st\u0159enka."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677142
+    m_Localized: '"Iron fibula, Poggio Pinci, Asciano" (https://skfb.ly/owM9J) by
+      Global Digital Heritage and GDH-Afrika is licensed under Creative Commons Attribution
+      (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2423805057429504
+    m_Localized: '"Celtic stater" (https://skfb.ly/oGtrP) by Allard Pierson is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677143
+    m_Localized: '"old rusty nail" (https://skfb.ly/oJLC8) by andycz is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677145
+    m_Localized: '"Rusty nail" (https://skfb.ly/o98PB) by tumgb is licensed under
+      Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677148
+    m_Localized: '"Nail_new Lp_draft" (https://skfb.ly/oPVUY) by alexei_g is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677149
+    m_Localized: '"Nail_new Lp_draft" (https://skfb.ly/oPVUY) by alexei_g is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677150
+    m_Localized: '"Nail_new Lp_draft" (https://skfb.ly/oPVUY) by alexei_g is licensed
+      under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677122
+    m_Localized: '"Silver Denarius, Roman Republic" (https://skfb.ly/oIHWI) by Frank
+      McMains is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677146
+    m_Localized: '"Stack Of Nuka-Cola Caps" (https://skfb.ly/oXnQt) by jcwiki is
+      licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677147
+    m_Localized: '"Stack Of Nuka-Cola Caps" (https://skfb.ly/oXnQt) by jcwiki is
+      licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677124
+    m_Localized: "Eberfigur / Boar figurine by LWL-Museum f\xFCr Arch\xE4ologie,
+      Herne"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677129
+    m_Localized: '"Cartridge 1936" (https://skfb.ly/o8tAs) by P. Romero Pellitero
+      is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677141
+    m_Localized: "CC0 Public Domain, Archaeological Museum in Krak\xF3w, https://muzea.malopolska.pl/en/objects-list/1574"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677125
+    m_Localized: CC0 Public Domain, LWL-Archaeologie, https://sketchfab.com/3d-models/037-armring-bangle-926c94add9b14cf38db173305a730607
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677126
+    m_Localized: '"Small bronze hook, Cerro de las Cabezas" (https://skfb.ly/oHpsZ)
+      by Global Digital Heritage and GDH-Afrika is licensed under Creative Commons
+      Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677127
+    m_Localized: '"Wmid-80coo9 - Bronze Age Palstave" (https://skfb.ly/ozHTL) by
+      The Potteries Museum & Art Gallery is licensed under Creative Commons Attribution
+      (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677128
+    m_Localized: '"wmid-7324d0 - Possible Bronze Age Ingot" (https://skfb.ly/oUwKE)
+      by The Potteries Museum & Art Gallery is licensed under Creative Commons Attribution
+      (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677138
+    m_Localized: '"Melted Lead Shot" (https://skfb.ly/os9sR) by Florida Public Archaeology
+      Network is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677139
+    m_Localized: '"Merrill Carbine Bullet" (https://skfb.ly/6SBqS) by BostonArchaeology
+      is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677140
+    m_Localized: '"Wmid-1a88d9 - Spindle whorl" (https://skfb.ly/oRD6s) by Staffs
+      FLO is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677134
+    m_Localized: '"Coin of Czechoslovakia (1959)" (https://skfb.ly/6YAxE) by Igor
+      Denisov is licensed under Creative Commons Attribution-ShareAlike (http://creativecommons.org/licenses/by-sa/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677123
+    m_Localized: "CC0 Public Domain, Virtual Museums of Ma\u0142opolska, https://sketchfab.com/3d-models/medallion-for-a-beadwork-necklace-142d386fba0b419ead86627554e4e731"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677133
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky. Exkluzivn\xED obsah.
+      Majitel si nep\u0159eje b\xFDt zve\u0159ejn\u011Bn."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677130
+    m_Localized: '"Bullet with cartridge (replica)" (https://skfb.ly/oMwPZ) by kova484
+      is licensed under Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677151
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677131
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677132
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677137
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677135
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677136
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677121
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27208199127166976
+    m_Localized: "Hlin\xEDkov\xE1 p\u0159ezka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27208199148138496
+    m_Localized: "P\u0159ezka z hlin\xEDku pravd\u011Bpodobn\u011B z vojensk\xE9
+      v\xFDstroje voj\xE1ka 1. nebo 2. sv\u011Btov\xE9 v\xE1lky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27208199148138497
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2427124236677144
+    m_Localized: "P\u0159edm\u011Bt ze soukrom\xE9 sb\xEDrky."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

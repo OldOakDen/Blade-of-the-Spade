@@ -1,0 +1,232 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: MetalDetectingSceneTable Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: MetalDetectingSceneTable
+  m_TableCollectionNameGuidString: e0d42265492ce85438b8c17847118906
+  m_Entries:
+  - m_Id: 42632781233385472
+    m_Key: dtct_hint_welcome
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781254356992
+    m_Key: dtct_hint_keys
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781258551296
+    m_Key: dtct_hint_shift
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781258551297
+    m_Key: dtct_hint_mouse
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42632781258551298
+    m_Key: dtct_hint_mousebuttL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646981177344
+    m_Key: dtct_hint_mousebuttR
+    m_Metadata:
+      m_Items: []
+  - m_Id: 57029160960
+    m_Key: dtct_hint_spacetodig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371648
+    m_Key: dtct_hint_mouseLdig
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371649
+    m_Key: dtct_hint_pinpointHint
+    m_Metadata:
+      m_Items: []
+  - m_Id: 785877561344
+    m_Key: dtct_hint_spacetodtct
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371650
+    m_Key: dtct_hint_itemFound
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371651
+    m_Key: dtct_hint_identify01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371652
+    m_Key: dtct_hint_identify02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371653
+    m_Key: dtct_hint_identify03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371654
+    m_Key: dtct_hint_identify04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 43043444678193152
+    m_Key: dtct_hint_identify05
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49915174570946560
+    m_Key: dtct_hint_identify06
+    m_Metadata:
+      m_Items: []
+  - m_Id: 52403600616583168
+    m_Key: dtct_hint_identify07
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371655
+    m_Key: dtct_hint_idtfDone01
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371656
+    m_Key: dtct_hint_idtfDone02
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42698646985371657
+    m_Key: dtct_hint_idtfDone03
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857024
+    m_Key: dtct_hint_idtfDone04
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857025
+    m_Key: dtct_hint_idntknw
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857026
+    m_Key: dtct_hint_prdA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857027
+    m_Key: dtct_hint_prdB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857028
+    m_Key: dtct_hint_prdC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857029
+    m_Key: dtct_hint_prdD
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857030
+    m_Key: dtct_hint_prdE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857031
+    m_Key: dtct_hint_prdF
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857032
+    m_Key: dtct_hint_prdG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857033
+    m_Key: dtct_hint_matG
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857034
+    m_Key: dtct_hint_matS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857035
+    m_Key: dtct_hint_matB
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857036
+    m_Key: dtct_hint_matC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857037
+    m_Key: dtct_hint_matA
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857038
+    m_Key: dtct_hint_matL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857039
+    m_Key: dtct_hint_matI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857040
+    m_Key: dtct_hint_typC
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857041
+    m_Key: dtct_hint_typJ
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857042
+    m_Key: dtct_hint_typM
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857043
+    m_Key: dtct_hint_typS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857044
+    m_Key: dtct_hint_typU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42723011881857045
+    m_Key: dtct_hint_typT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42974819342610432
+    m_Key: dtct_identFormUnkwn
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305600
+    m_Key: dtct_identFormPrd
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305601
+    m_Key: dtct_identFormMat
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305602
+    m_Key: dtct_identFormTyp
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305603
+    m_Key: dtct_identFormBns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305604
+    m_Key: dtct_identFormTtlBns
+    m_Metadata:
+      m_Items: []
+  - m_Id: 42728067985305605
+    m_Key: dtct_identFormDmg
+    m_Metadata:
+      m_Items: []
+  - m_Id: 45190505678761984
+    m_Key: dtct_gridOnOff
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 7469727190384377880
+  references:
+    version: 2
+    RefIds:
+    - rid: 7469727190384377880
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1710437759374

@@ -1,0 +1,225 @@
+using UnityEngine;
+
+public class ObjectPreview : MonoBehaviour
+{
+    public enum PreviewMode
+    {
+        Discovery,   // Mód pøi objevování nového pøedmìtu
+        Examination, // Mód pro prohlížení již objevených pøedmìtù
+        Showcase     // Mód pro prezentaci (napø. bez interakce)
+    }
+
+    public DetectManager detectManager;
+    public GameObject grid;
+    public GameObject findsScrollView;
+    public Transform newParent; // Nový rodiè pro nalezené objekty
+    public GameObject previewedTarget;
+    public bool discoveryNow = true;
+    public PreviewMode currentMode; // Pøidáme aktuální mód
+
+    public bool showByButton;
+
+    private float rotationSpeed = 1000f; // Rychlost rotace
+    private float scaleSpeed = 10f; // Rychlost zmìny velikosti
+    private Vector3 initialScale; // Poèáteèní velikost
+    private Vector3 initialGridScale; // Poèáteèní velikost gridu
+    private float verticalRotationLimit = 180f; // Omezení rotace nahoru a dolù
+    private float currentVerticalRotation = 0f; // Aktuální vertikální rotace
+
+    void OnEnable()
+    {
+        showByButton = false;
+    }
+
+    public void InitializeMode(PreviewMode mode)
+    {
+        currentMode = mode;
+
+        switch (mode)
+        {
+            case PreviewMode.Discovery:
+                InitializeDiscoveryMode();
+                break;
+            case PreviewMode.Examination:
+                InitializeExaminationMode();
+                break;
+            case PreviewMode.Showcase:
+                InitializeShowcaseMode();
+                break;
+        }
+    }
+
+    private void InitializeDiscoveryMode()
+    {
+        // Specifická nastavení pro Discovery mód
+        detectManager.hintTextbox.DisplayLocalizedText("MetalDetectingSceneTable", "dtct_hint_itemFound", "dtct_hint_identify01", "dtct_hint_identify02", "dtct_hint_identify03", "dtct_hint_identify04", "dtct_hint_identify05", "dtct_hint_identify06", "dtct_hint_identify07");
+
+        detectManager.identifyForm.SetActive(true);
+        detectManager.gridButton.SetActive(true);
+        GetComponent<Animator>().enabled = true;
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        previewedTarget = detectManager.actualSignal;
+        newParent.transform.eulerAngles = Vector3.zero;
+        newParent.transform.localRotation = Quaternion.identity;
+
+        previewedTarget.transform.SetParent(newParent, false);
+        previewedTarget.transform.localPosition = Vector3.zero;
+        previewedTarget.transform.eulerAngles = Vector3.zero;
+        previewedTarget.transform.localRotation = Quaternion.identity;
+
+        previewedTarget.transform.localScale *= detectManager.actualSignal.GetComponent<DetectTarget>().previewResize;
+        previewedTarget.GetComponent<Collider>().enabled = false;
+        previewedTarget.GetComponent<ClayEffect>().enabled = true;
+
+        grid.transform.localScale = Vector3.one;
+        grid.transform.localScale *= detectManager.actualSignal.GetComponent<DetectTarget>().previewResize;
+
+        AudioManager.Instance.PlaySFX("Discovery01");
+        AudioManager.Instance.PlayLoopSound("Heartbeat");
+
+        initialScale = previewedTarget.transform.localScale;
+        initialGridScale = grid.transform.localScale;
+    }
+
+    private void InitializeExaminationMode()
+    {
+        findsScrollView.SetActive(true);
+        //zde by 
+
+        detectManager.gridButton.SetActive(true);
+
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
+        AudioManager.Instance.PlaySFX("Backpack");
+
+        GetComponent<Animator>().enabled = false;
+        GetComponent<Animator>().enabled = true;
+
+        //tady se musi zinicializovat prohlizeny predmet podle toho, na co hrac kliknul ve vyberu
+        //jako prvni se ale automaticky objevuje posledne objeveny predmet
+        //print("NAPOSLED NALEZENY PREDMET: " + detectManager.foundItemsManager.GetLastFoundItemName());
+
+        //protoze tento mod funguje trosku jinak nez mod po objeveni predmetu, musi se asi urcite veci inicializovat znovu v nejake dalsi funkci
+        //kdyz hrac klikne na button s jinym predmetem, ktery chce prohlizet
+        if (!showByButton) //pokud neni tato inicializace prostrednictvim tlacitka ve scrollview, ukaz posledne nalezeny predmet
+        {
+            previewedTarget = detectManager.foundItemsManager.GetLastFoundItemInstance();
+        }
+       
+        if (previewedTarget != null)
+        {
+            newParent.transform.eulerAngles = Vector3.zero;
+            newParent.transform.localRotation = Quaternion.identity;
+
+            previewedTarget.transform.SetParent(newParent, false);
+            previewedTarget.transform.localPosition = Vector3.zero;
+            previewedTarget.transform.eulerAngles = Vector3.zero;
+            previewedTarget.transform.localRotation = Quaternion.identity;
+
+            previewedTarget.transform.localScale *= previewedTarget.GetComponent<DetectTarget>().previewResize;
+            previewedTarget.GetComponent<Collider>().enabled = false;
+            previewedTarget.GetComponent<ClayEffect>().enabled = false; // Nebude zapnutý ClayEffect
+
+            grid.transform.localScale = Vector3.one;
+            grid.transform.localScale *= previewedTarget.GetComponent<DetectTarget>().previewResize;
+
+            initialScale = previewedTarget.transform.localScale;
+            initialGridScale = grid.transform.localScale;
+        }
+
+    }
+
+    private void InitializeShowcaseMode()
+    {
+        // Napøíklad: statický mód bez interakce
+        detectManager.identifyForm.SetActive(false);
+        detectManager.gridButton.SetActive(false);
+        GetComponent<Animator>().enabled = false;
+
+        previewedTarget = detectManager.actualSignal;
+        newParent.transform.eulerAngles = Vector3.zero;
+        newParent.transform.localRotation = Quaternion.identity;
+
+        previewedTarget.transform.SetParent(newParent, false);
+        previewedTarget.transform.localPosition = Vector3.zero;
+        previewedTarget.transform.eulerAngles = Vector3.zero;
+        previewedTarget.transform.localRotation = Quaternion.identity;
+
+        previewedTarget.transform.localScale *= detectManager.actualSignal.GetComponent<DetectTarget>().previewResize;
+        previewedTarget.GetComponent<Collider>().enabled = false;
+        previewedTarget.GetComponent<ClayEffect>().enabled = false;
+
+        // Zde by mohl být také jiný styl zobrazení (bez možnosti otáèení, napø.)
+    }
+
+    private void Update()
+    {
+        // Interakce a rotace jen pokud nejsme ve statickém módu
+        if (currentMode != PreviewMode.Showcase)
+        {
+            HandleObjectRotation();
+            HandleObjectScaling();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space) && currentMode == PreviewMode.Discovery)
+        {
+            detectManager.identifyForm.SetActive(false);
+            Cursor.lockState = CursorLockMode.Locked;
+            Cursor.visible = false;
+        }
+    }
+
+    private void HandleObjectRotation()
+    {
+        if (Input.GetMouseButton(1) && previewedTarget != null)
+        {
+            float mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
+            float mouseY = -Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
+
+            previewedTarget.transform.Rotate(Vector3.up, -mouseX, Space.Self);
+
+            float newVerticalRotation = currentVerticalRotation + mouseY;
+            newVerticalRotation = Mathf.Clamp(newVerticalRotation, -verticalRotationLimit, verticalRotationLimit);
+            float verticalRotationChange = newVerticalRotation - currentVerticalRotation;
+
+            previewedTarget.transform.Rotate(Vector3.right, verticalRotationChange, Space.Self);
+
+            currentVerticalRotation = newVerticalRotation;
+        }
+    }
+
+    private void HandleObjectScaling()
+    {
+        float scrollInput = Input.GetAxis("Mouse ScrollWheel");
+        if (scrollInput != 0 && previewedTarget != null)
+        {
+            Vector3 newScale = previewedTarget.transform.localScale + Vector3.one * scrollInput * scaleSpeed;
+            Vector3 newGridScale = grid.transform.localScale + Vector3.one * scrollInput * scaleSpeed;
+
+            newScale = Vector3.Max(newScale, initialScale * 0.5f);
+            newScale = Vector3.Min(newScale, initialScale * 2f);
+            newGridScale = Vector3.Max(newGridScale, initialGridScale * 0.5f);
+            newGridScale = Vector3.Min(newGridScale, initialGridScale * 2f);
+
+            previewedTarget.transform.localScale = newScale;
+            grid.transform.localScale = newGridScale;
+        }
+    }
+
+public void ChangeDiscoveryNow()
+    {
+        GetComponent<Animator>().enabled = false;
+    }
+
+    public void ToggleGrid()
+    {
+        if (grid != null)
+        {
+            grid.SetActive(!grid.activeSelf); // Pøepne aktivní stav GameObjectu
+        }
+    }
+}

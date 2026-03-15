@@ -1,0 +1,12 @@
+# Blender 4.1.1 MTL File: 'Objects.blend'
+# www.blender.org
+
+newmtl CIU_0002_mat
+Ns 62.500000
+Ka 0.250000 0.250000 0.250000
+Ks 0.500000 0.500000 0.500000
+Ke 0.000000 0.000000 0.000000
+Ni 1.500000
+d 1.000000
+illum 3
+map_Kd D:/Work/Project XY/Finds/Sources/CIU_0001/CIU_0002_nail_diff.png
