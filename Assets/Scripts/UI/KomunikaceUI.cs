@@ -14,12 +14,13 @@ public class KomunikaceUI : MonoBehaviour
 
     [Header("Horní lišta")]
     [SerializeField] private Button   buttonClose;
-    [SerializeField] private TMP_Text tabLabelNew;
-    [SerializeField] private TMP_Text tabLabelPending;
-    [SerializeField] private TMP_Text tabLabelDone;
     [SerializeField] private Button   buttonTabNew;
     [SerializeField] private Button   buttonTabPending;
     [SerializeField] private Button   buttonTabDone;
+    [Tooltip("Samostatný TMP_Text objekt pouze pro číslo – bez LocalizeStringEvent.")]
+    [SerializeField] private TMP_Text tabCountNew;
+    [SerializeField] private TMP_Text tabCountPending;
+    [SerializeField] private TMP_Text tabCountDone;
 
     [Header("Seznam zpráv (ScrollView content)")]
     [SerializeField] private Transform  listContent;
@@ -75,12 +76,6 @@ public class KomunikaceUI : MonoBehaviour
             Refresh();
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-            mainGameUI.GoBack();
-    }
-
     // -------------------------------------------------------------------------
     // Záložky
     // -------------------------------------------------------------------------
@@ -97,7 +92,6 @@ public class KomunikaceUI : MonoBehaviour
     private void UpdateTabLabels()
     {
         var gsm = GameStateManager.Instance;
-        _allUnlocked = messageDatabase.GetUnlockedMessages(gsm);
 
         int countNew = 0, countPending = 0, countDone = 0;
         foreach (var msg in _allUnlocked)
@@ -110,9 +104,9 @@ public class KomunikaceUI : MonoBehaviour
             }
         }
 
-        tabLabelNew    .text = $"Nové zprávy [{countNew}]";
-        tabLabelPending.text = $"Čeká na zpracování [{countPending}]";
-        tabLabelDone   .text = $"Zpracováno [{countDone}]";
+        if (tabCountNew     != null) tabCountNew    .text = $"[{countNew}]";
+        if (tabCountPending != null) tabCountPending.text = $"[{countPending}]";
+        if (tabCountDone    != null) tabCountDone   .text = $"[{countDone}]";
     }
 
     private Tab GetBucket(MessageData msg, GameStateManager gsm)
@@ -130,12 +124,18 @@ public class KomunikaceUI : MonoBehaviour
 
     private void Refresh()
     {
-        // Okamžitě skryj staré řádky ještě před přepočtem — Destroy() je odložený
+        // Okamžitě skryj staré řádky — Destroy() je odložený
         foreach (var row in _rows)
             row?.SetActive(false);
 
-        UpdateTabLabels();
+        // Aktualizuj seznam odemčených zpráv dřív než cokoliv jiného
+        _allUnlocked = messageDatabase.GetUnlockedMessages(GameStateManager.Instance);
+
+        // BuildList musí být PŘED UpdateTabLabels:
+        // vytváření řádků spouští GetLocalizedString(), které může
+        // re-firovat LocalizeStringEvent na tab labelech a přepsat je.
         BuildList();
+        UpdateTabLabels();
     }
 
     private void BuildList()

@@ -86,11 +86,11 @@ public class MenuManager : MonoBehaviour
         {
             await AuthenticationService.Instance.SignInAnonymouslyAsync();
         }
-        catch (AuthenticationException exception)
+        catch (AuthenticationException)
         {
             ShowError(ErrorMenu.Action.OpenAuthMenu, "Failed to sign in.", "OK");
         }
-        catch (RequestFailedException exception)
+        catch (RequestFailedException)
         {
             ShowError(ErrorMenu.Action.SignIn, "Failed to connect to the network.", "Retry");
         }
@@ -103,11 +103,11 @@ public class MenuManager : MonoBehaviour
         {
             await AuthenticationService.Instance.SignInWithUsernamePasswordAsync(username, password);
         }
-        catch (AuthenticationException exception)
+        catch (AuthenticationException)
         {
             ShowError(ErrorMenu.Action.OpenAuthMenu, "Username or password is wrong.", "OK");
         }
-        catch (RequestFailedException exception)
+        catch (RequestFailedException)
         {
             ShowError(ErrorMenu.Action.OpenAuthMenu, "Failed to connect to the network.", "OK");
         }

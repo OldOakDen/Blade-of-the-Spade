@@ -13,11 +13,18 @@ public class MainGameUI : MonoBehaviour
     public GameObject statistikyPanel;
 
     [Header("Navigační tlačítka")]
+    public Button buttonBack;
     public Button buttonKomunikace;
     public Button buttonMapa;
     public Button buttonBadatelna;
     public Button buttonSbirka;
     public Button buttonStatistiky;
+
+    [Header("Tlačítka Back v panelech")]
+    public Button buttonBackMapa;
+    public Button buttonBackBadatelna;
+    public Button buttonBackSbirka;
+    public Button buttonBackStatistiky;
 
     [Header("Vykřičníky na navigačních tlačítkách")]
     public Image exclamationKomunikace;
@@ -26,10 +33,14 @@ public class MainGameUI : MonoBehaviour
     public Image exclamationSbirka;
     public Image exclamationStatistiky;
 
+    [Header("Dependencies")]
+    public SceneController sceneController;
+
     // -------------------------------------------------------------------------
 
     private Dictionary<string, GameObject> _panels;
     private Dictionary<string, Image>      _exclamations;
+    private bool                           _contentPanelOpen;
 
     // -------------------------------------------------------------------------
 
@@ -66,6 +77,14 @@ public class MainGameUI : MonoBehaviour
 
     private void Start()
     {
+        if (buttonBack != null)
+            buttonBack.onClick.AddListener(GoToWorkroom);
+
+        if (buttonBackMapa       != null) buttonBackMapa      .onClick.AddListener(GoBack);
+        if (buttonBackBadatelna  != null) buttonBackBadatelna .onClick.AddListener(GoBack);
+        if (buttonBackSbirka     != null) buttonBackSbirka    .onClick.AddListener(GoBack);
+        if (buttonBackStatistiky != null) buttonBackStatistiky.onClick.AddListener(GoBack);
+
         buttonKomunikace.onClick.AddListener(() => ShowPanel(NotificationManager.SectionKomunikace));
         buttonMapa      .onClick.AddListener(() => ShowPanel(NotificationManager.SectionMapa));
         buttonBadatelna .onClick.AddListener(() => ShowPanel(NotificationManager.SectionBadatelna));
@@ -96,11 +115,31 @@ public class MainGameUI : MonoBehaviour
             Debug.LogWarning($"[MainGameUI] Neznámé panelID: {panelID}");
 
         navigationPanel.SetActive(false);
+        _contentPanelOpen = true;
     }
 
     public void GoBack()
     {
         ShowNavigationPanel();
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (_contentPanelOpen)
+                GoBack();
+            else
+                GoToWorkroom();
+        }
+    }
+
+    public void GoToWorkroom()
+    {
+        if (sceneController != null)
+            sceneController.LoadWorkroom();
+        else
+            Debug.LogWarning("[MainGameUI] sceneController není přiřazen.");
     }
 
     // -------------------------------------------------------------------------
@@ -109,6 +148,7 @@ public class MainGameUI : MonoBehaviour
     {
         HideAllContentPanels();
         navigationPanel.SetActive(true);
+        _contentPanelOpen = false;
     }
 
     private void HideAllContentPanels()

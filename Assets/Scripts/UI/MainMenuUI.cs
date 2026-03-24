@@ -10,7 +10,8 @@ public class MainMenuUI : MonoBehaviour
     public Button buttonQuit;
 
     [Header("Dependencies")]
-    public SceneController sceneController;
+    public SceneController    sceneController;
+    public ActionConfirmMenu  confirmMenu;
 
     [Header("DEBUG — přímý vstup do detekce")]
     public Button           buttonDebugDetect;
@@ -34,9 +35,27 @@ public class MainMenuUI : MonoBehaviour
 
     private void OnNewGame()
     {
-        if (GameStateManager.Instance != null)
-            GameStateManager.Instance.DeleteSave();
+        if (confirmMenu != null && GameStateManager.Instance != null && GameStateManager.Instance.HasSaveData())
+        {
+            confirmMenu.Open(result =>
+            {
+                if (result == ActionConfirmMenu.Result.Positive)
+                    StartNewGame();
+            },
+            message:        "Opravdu chceš smazat rozehranou hru a začít znovu?",
+            buttonPositive: "Začít znovu",
+            buttonNegative: "Zrušit");
+        }
+        else
+        {
+            StartNewGame();
+        }
+    }
 
+    private void StartNewGame()
+    {
+        GameStateManager.Instance?.DeleteSave();
+        GameStateManager.Instance?.MarkGameStarted();
         sceneController.LoadMainGame();
     }
 

@@ -16,6 +16,7 @@ public class MapMarkerData
 [Serializable]
 public class GameSaveData
 {
+    public bool                       gameStarted       = false;
     public Dictionary<string, bool>   messages          = new Dictionary<string, bool>();
     public Dictionary<string, bool>   foundArtifacts    = new Dictionary<string, bool>();
     public Dictionary<string, bool>   hypotheses        = new Dictionary<string, bool>();
@@ -71,7 +72,13 @@ public class GameStateManager : MonoBehaviour
         }
     }
 
-    public bool HasSaveData() => File.Exists(SaveFilePath);
+    public bool HasSaveData() => File.Exists(SaveFilePath) && State.gameStarted;
+
+    public void MarkGameStarted()
+    {
+        State.gameStarted = true;
+        SaveGame();
+    }
 
     public void DeleteSave()
     {
