@@ -73,7 +73,7 @@ public class MenuManager : MonoBehaviour
                 PanelManager.Open("auth");
             }
         }
-        catch (Exception exception)
+        catch (Exception)
         {
             ShowError(ErrorMenu.Action.StartService, "Failed to connect to the network.", "Retry");
         }

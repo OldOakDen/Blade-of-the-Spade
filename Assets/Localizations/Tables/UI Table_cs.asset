@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Table_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: 3f6ba4e8ad7ecde4d9628d258a06e200, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 250763161600
+    m_Localized: "Nov\xFD lov"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 376260931584
+    m_Localized: "Pokra\u010Duj v lovu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 380161634304
+    m_Localized: "Nastaven\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 383378665472
+    m_Localized: "Konec z\xE1bavy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17139409235968
+    m_Localized: Komunikace
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17145142849536
+    m_Localized: Mapa
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17147722346496
+    m_Localized: Badatelna
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17150641582080
+    m_Localized: "Sb\xEDrka"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 17153720201216
+    m_Localized: Statistiky
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800988707401728
+    m_Localized: "Zpracov\xE1no"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800986316648448
+    m_Localized: "\u010Cek\xE1 na zpracov\xE1n\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1800577577529344
+    m_Localized: "Nov\xE9 zpr\xE1vy"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1809217474670592
+    m_Localized: Potvrzuji
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using System.Collections.Generic;
 using UnityEngine.Localization.Settings;
@@ -25,6 +26,12 @@ public class ItemIdentification : MonoBehaviour
 
     public GameObject imageNameBckg;
 
+    public Color colorDefault = new Color(1f, 1f, 1f, 1f);
+    public Color colorCorrect = new Color(0.2f, 0.8f, 0.2f, 1f);
+    public Color colorIncorrect = new Color(0.8f, 0.2f, 0.2f, 1f);
+    public Color colorScoreCorrect = new Color(0.2f, 0.8f, 0.2f, 1f);
+    public Color colorScoreIncorrect = new Color(0.8f, 0.2f, 0.2f, 1f);
+
     public TMP_Text itemNameText;
     public TMP_Text itemRvlPrc;
     public TMP_Text scoreRevealText;
@@ -32,6 +39,11 @@ public class ItemIdentification : MonoBehaviour
     public TMP_Text scoreMaterialText;
     public TMP_Text scoreTypeText;
     public TMP_Text totalScoreText;
+
+    private Color originalColorImagePeriod;
+    private Color originalColorImageMaterial;
+    private Color originalColorImageType;
+    private Color originalColorImageTotal;
 
     private int bonusReveal;
 
@@ -119,6 +131,11 @@ public class ItemIdentification : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        originalColorImagePeriod   = imagePeriod.GetComponent<Image>().color;
+        originalColorImageMaterial = imageMaterial.GetComponent<Image>().color;
+        originalColorImageType     = imageType.GetComponent<Image>().color;
+        originalColorImageTotal    = imageTotal.GetComponent<Image>().color;
+
         InitializeValues();
         StartCoroutine(AddDropdownItems());
     }
@@ -168,6 +185,14 @@ public class ItemIdentification : MonoBehaviour
         dropdownMaterial.value = 0;
         dropdownType.value = 0;
 
+        SetBackgroundColor(dropdownPeriod.gameObject, colorDefault);
+        SetBackgroundColor(dropdownMaterial.gameObject, colorDefault);
+        SetBackgroundColor(dropdownType.gameObject, colorDefault);
+        SetBackgroundColor(imagePeriod,   originalColorImagePeriod);
+        SetBackgroundColor(imageMaterial, originalColorImageMaterial);
+        SetBackgroundColor(imageType,     originalColorImageType);
+        SetBackgroundColor(imageTotal,    originalColorImageTotal);
+
         revealRounds = detectManager.actualSignal.GetComponent<ClayEffect>().numClayObjects; //pocet odhalovacich kol - pocet kusu hliny na objektu
         //print("Pocet odhalovacich kol (kusu hliny):" + revealRounds);
         itemNameText.text = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("MetalDetectingSceneTable", "dtct_identFormUnkwn").Result;
@@ -195,11 +220,11 @@ public class ItemIdentification : MonoBehaviour
             if (task.Result != null)
             {
                // targetIDstat = task.Result; //stav identifikace tohoto predmetu, promenna je momentalne naplnena v incializacnim procesu jako 000
-                Debug.Log("Identifikaèní stav pøedmìtu: " + targetIDstat + " Toto je konstrukce pro volani loadu stavidentifikace z Cloudu.");
+                Debug.Log("Identifikaï¿½nï¿½ stav pï¿½edmï¿½tu: " + targetIDstat + " Toto je konstrukce pro volani loadu stavidentifikace z Cloudu.");
             }
             else
             {
-                Debug.Log("Pøedmìt " + detectTarget.itemID + " nebyl nalezen. Toto je konstrukce pro volani loadu stavidentifikace z Cloudu.");
+                Debug.Log("Pï¿½edmï¿½t " + detectTarget.itemID + " nebyl nalezen. Toto je konstrukce pro volani loadu stavidentifikace z Cloudu.");
             }
         }); //tuto konstrukci ve finale odstranit, zbytecne zatezuje a navysuje cteni z Cloudu
 
@@ -212,38 +237,41 @@ public class ItemIdentification : MonoBehaviour
         if (dropdownValue1 == variablePeriod)
         {
             //prvni kategorie je spravne urcena
-            targetIDstat = SetIdentificationState(targetIDstat, 0, '1'); // Nastavíme první kategorii na identifikovaný stav
+            targetIDstat = SetIdentificationState(targetIDstat, 0, '1'); // Nastavï¿½me prvnï¿½ kategorii na identifikovanï¿½ stav
             dropdownPeriod.interactable = false;
             scorePeriod = scorePeriod + 1;
             UpdateScoreText(scorePeriodText, scorePeriod);
             detectManager.AddScore(1);
             //efekt pricteni bodu
+            SetBackgroundColor(dropdownPeriod.gameObject, colorCorrect);
             imagePeriod.GetComponent<FlashEffect>().Flash();
         }
         if (dropdownValue2 == variableMaterial)
         {
             //druha kategorie je spravne urcena
-            targetIDstat = SetIdentificationState(targetIDstat, 1, '1'); // Nastavíme druhou kategorii na identifikovaný stav
+            targetIDstat = SetIdentificationState(targetIDstat, 1, '1'); // Nastavï¿½me druhou kategorii na identifikovanï¿½ stav
             dropdownMaterial.interactable = false;
             scoreMaterial = scoreMaterial + 1;
             UpdateScoreText(scoreMaterialText, scoreMaterial);
             detectManager.AddScore(1);
             //efekt pricteni bodu
+            SetBackgroundColor(dropdownMaterial.gameObject, colorCorrect);
             imageMaterial.GetComponent<FlashEffect>().Flash();
         }
         if (dropdownValue3 == variableType)
         {
             //treti kategorie je spravne urcena
-            targetIDstat = SetIdentificationState(targetIDstat, 2, '1'); // Nastavíme treti kategorii na identifikovaný stav
+            targetIDstat = SetIdentificationState(targetIDstat, 2, '1'); // Nastavï¿½me treti kategorii na identifikovanï¿½ stav
             dropdownType.interactable = false;
             scoreType = scoreType + 1;
             UpdateScoreText(scoreTypeText, scoreType);
             detectManager.AddScore(1);
             //efekt pricteni bodu
+            SetBackgroundColor(dropdownType.gameObject, colorCorrect);
             imageType.GetComponent<FlashEffect>().Flash();
         }
 
-        Debug.Log("Identifikaèní stav pøedmìtu: " + targetIDstat);
+        Debug.Log("Identifikaï¿½nï¿½ stav pï¿½edmï¿½tu: " + targetIDstat);
 
         int totalScore = scorePeriod + scoreMaterial + scoreType + bonusReveal;
         UpdateScoreText(totalScoreText, totalScore);
@@ -282,26 +310,47 @@ public class ItemIdentification : MonoBehaviour
             else
             {
                 detectManager.hintTextbox.DisplayLocalizedText("MetalDetectingSceneTable", "dtct_hint_idtfDone01", "dtct_hint_idtfDone02", "dtct_hint_idtfDone04", "dtct_hint_spacetodtct");
-                // Vypni interaktivitu u zbývajících položek, které jsou stále interaktivní, a nastav hodnotu Dropdown menu na Value 0
+                // Vypni interaktivitu u zbï¿½vajï¿½cï¿½ch poloï¿½ek, kterï¿½ jsou stï¿½le interaktivnï¿½, a nastav hodnotu Dropdown menu na Value 0
                 if (dropdownPeriod.interactable)
                 {
                     dropdownPeriod.interactable = false;
                     dropdownPeriod.value = 0;
+                    SetBackgroundColor(dropdownPeriod.gameObject, colorIncorrect);
                 }
 
                 if (dropdownMaterial.interactable)
                 {
                     dropdownMaterial.interactable = false;
                     dropdownMaterial.value = 0;
+                    SetBackgroundColor(dropdownMaterial.gameObject, colorIncorrect);
                 }
 
                 if (dropdownType.interactable)
                 {
                     dropdownType.interactable = false;
                     dropdownType.value = 0;
+                    SetBackgroundColor(dropdownType.gameObject, colorIncorrect);
                 }
             }
+
+            StartCoroutine(ApplyFinalScoreColors());
         }
+    }
+
+    private IEnumerator ApplyFinalScoreColors()
+    {
+        yield return new WaitForSeconds(imagePeriod.GetComponent<FlashEffect>().flashDuration);
+        SetBackgroundColor(imagePeriod,   scorePeriod   > 0 ? colorScoreCorrect : colorScoreIncorrect);
+        SetBackgroundColor(imageMaterial, scoreMaterial > 0 ? colorScoreCorrect : colorScoreIncorrect);
+        SetBackgroundColor(imageType,     scoreType     > 0 ? colorScoreCorrect : colorScoreIncorrect);
+        int totalScore = scorePeriod + scoreMaterial + scoreType + bonusReveal;
+        SetBackgroundColor(imageTotal,    totalScore    > 0 ? colorScoreCorrect : colorScoreIncorrect);
+    }
+
+    private void SetBackgroundColor(GameObject obj, Color color)
+    {
+        Image img = obj.GetComponent<Image>();
+        if (img != null) img.color = color;
     }
 
     public string SetIdentificationState(string state, int index, char newState) //meni znaky v retezci string pro urcovani spravne urcenych kategorii
@@ -318,13 +367,13 @@ public class ItemIdentification : MonoBehaviour
 
     private IEnumerator AddDropdownItems()
     {
-        // Pøidání položek do dropdownPeriod
+        // Pï¿½idï¿½nï¿½ poloï¿½ek do dropdownPeriod
         yield return AddDropdownOptions(keysPeriod, dropdownPeriod);
 
-        // Pøidání položek do dropdownMaterial
+        // Pï¿½idï¿½nï¿½ poloï¿½ek do dropdownMaterial
         yield return AddDropdownOptions(keysMaterial, dropdownMaterial);
 
-        // Pøidání položek do dropdownType
+        // Pï¿½idï¿½nï¿½ poloï¿½ek do dropdownType
         yield return AddDropdownOptions(keysType, dropdownType);
     }
 
@@ -332,7 +381,7 @@ public class ItemIdentification : MonoBehaviour
     {
         foreach (string key in keys)
         {
-            // Získání lokalizovaného textu asynchronnì
+            // Zï¿½skï¿½nï¿½ lokalizovanï¿½ho textu asynchronnï¿½
             AsyncOperationHandle<string> handle = LocalizationSettings.StringDatabase.GetLocalizedStringAsync("MetalDetectingSceneTable", key);
             yield return handle;
 
@@ -340,7 +389,7 @@ public class ItemIdentification : MonoBehaviour
             {
                 string localizedString = handle.Result;
 
-                // Vytvoøení nové položky a pøidání do dropdown menu
+                // Vytvoï¿½enï¿½ novï¿½ poloï¿½ky a pï¿½idï¿½nï¿½ do dropdown menu
                 TMP_Dropdown.OptionData newOption = new TMP_Dropdown.OptionData();
                 newOption.text = localizedString;
                 dropdown.options.Add(newOption);
@@ -351,7 +400,7 @@ public class ItemIdentification : MonoBehaviour
             }
         }
 
-        // Obnovení zobrazené hodnoty
+        // Obnovenï¿½ zobrazenï¿½ hodnoty
         dropdown.RefreshShownValue();
     }
 }

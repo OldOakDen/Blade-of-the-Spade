@@ -13,18 +13,28 @@ MonoBehaviour:
   m_Name: Localization-String-Tables-Czech (cs)
   m_EditorClassIdentifier: 
   m_GroupName: Localization-String-Tables-Czech (cs)
-  m_Data:
-    m_SerializedData: []
   m_GUID: d01f80f88922d684fba63ed109336c19
   m_SerializeEntries:
-  - m_GUID: 61f0569e9fcdd2a4e8d8ec3b0b8d38e6
-    m_Address: MetalDetectingSceneTable_cs
+  - m_GUID: 01f496202b9696d478d06979a4d80436
+    m_Address: ItemsList_cs
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-cs
     FlaggedDuringContentUpdateRestriction: 0
-  - m_GUID: 01f496202b9696d478d06979a4d80436
-    m_Address: ItemsList_cs
+  - m_GUID: 3975288e62f40664fb4b3184d6ed3bd5
+    m_Address: Messages_cs
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-cs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 5af4bb20009818b4990b5c5d6786398e
+    m_Address: UI Table_cs
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-cs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 61f0569e9fcdd2a4e8d8ec3b0b8d38e6
+    m_Address: MetalDetectingSceneTable_cs
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-cs

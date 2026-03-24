@@ -4,27 +4,25 @@ public class ObjectPreview : MonoBehaviour
 {
     public enum PreviewMode
     {
-        Discovery,   // Mód pøi objevování nového pøedmìtu
-        Examination, // Mód pro prohlížení již objevených pøedmìtù
-        Showcase     // Mód pro prezentaci (napø. bez interakce)
+        Discovery,   // Mï¿½d pï¿½i objevovï¿½nï¿½ novï¿½ho pï¿½edmï¿½tu
+        Examination, // Mï¿½d pro prohlï¿½enï¿½ jiï¿½ objevenï¿½ch pï¿½edmï¿½tï¿½
+        Showcase     // Mï¿½d pro prezentaci (napï¿½. bez interakce)
     }
 
     public DetectManager detectManager;
     public GameObject grid;
     public GameObject findsScrollView;
-    public Transform newParent; // Nový rodiè pro nalezené objekty
+    public Transform newParent; // Novï¿½ rodiï¿½ pro nalezenï¿½ objekty
     public GameObject previewedTarget;
     public bool discoveryNow = true;
-    public PreviewMode currentMode; // Pøidáme aktuální mód
+    public PreviewMode currentMode; // Pï¿½idï¿½me aktuï¿½lnï¿½ mï¿½d
 
     public bool showByButton;
 
     private float rotationSpeed = 1000f; // Rychlost rotace
-    private float scaleSpeed = 10f; // Rychlost zmìny velikosti
-    private Vector3 initialScale; // Poèáteèní velikost
-    private Vector3 initialGridScale; // Poèáteèní velikost gridu
-    private float verticalRotationLimit = 180f; // Omezení rotace nahoru a dolù
-    private float currentVerticalRotation = 0f; // Aktuální vertikální rotace
+    private float scaleSpeed = 10f; // Rychlost zmï¿½ny velikosti
+    private Vector3 initialScale; // Poï¿½ï¿½teï¿½nï¿½ velikost
+    private Vector3 initialGridScale; // Poï¿½ï¿½teï¿½nï¿½ velikost gridu
 
     void OnEnable()
     {
@@ -51,7 +49,7 @@ public class ObjectPreview : MonoBehaviour
 
     private void InitializeDiscoveryMode()
     {
-        // Specifická nastavení pro Discovery mód
+        // Specifickï¿½ nastavenï¿½ pro Discovery mï¿½d
         detectManager.hintTextbox.DisplayLocalizedText("MetalDetectingSceneTable", "dtct_hint_itemFound", "dtct_hint_identify01", "dtct_hint_identify02", "dtct_hint_identify03", "dtct_hint_identify04", "dtct_hint_identify05", "dtct_hint_identify06", "dtct_hint_identify07");
 
         detectManager.identifyForm.SetActive(true);
@@ -122,7 +120,7 @@ public class ObjectPreview : MonoBehaviour
 
             previewedTarget.transform.localScale *= previewedTarget.GetComponent<DetectTarget>().previewResize;
             previewedTarget.GetComponent<Collider>().enabled = false;
-            previewedTarget.GetComponent<ClayEffect>().enabled = false; // Nebude zapnutý ClayEffect
+            previewedTarget.GetComponent<ClayEffect>().enabled = false; // Nebude zapnutï¿½ ClayEffect
 
             grid.transform.localScale = Vector3.one;
             grid.transform.localScale *= previewedTarget.GetComponent<DetectTarget>().previewResize;
@@ -135,7 +133,7 @@ public class ObjectPreview : MonoBehaviour
 
     private void InitializeShowcaseMode()
     {
-        // Napøíklad: statický mód bez interakce
+        // Napï¿½ï¿½klad: statickï¿½ mï¿½d bez interakce
         detectManager.identifyForm.SetActive(false);
         detectManager.gridButton.SetActive(false);
         GetComponent<Animator>().enabled = false;
@@ -153,12 +151,12 @@ public class ObjectPreview : MonoBehaviour
         previewedTarget.GetComponent<Collider>().enabled = false;
         previewedTarget.GetComponent<ClayEffect>().enabled = false;
 
-        // Zde by mohl být také jiný styl zobrazení (bez možnosti otáèení, napø.)
+        // Zde by mohl bï¿½t takï¿½ jinï¿½ styl zobrazenï¿½ (bez moï¿½nosti otï¿½ï¿½enï¿½, napï¿½.)
     }
 
     private void Update()
     {
-        // Interakce a rotace jen pokud nejsme ve statickém módu
+        // Interakce a rotace jen pokud nejsme ve statickem modu
         if (currentMode != PreviewMode.Showcase)
         {
             HandleObjectRotation();
@@ -178,17 +176,10 @@ public class ObjectPreview : MonoBehaviour
         if (Input.GetMouseButton(1) && previewedTarget != null)
         {
             float mouseX = Input.GetAxis("Mouse X") * rotationSpeed * Time.deltaTime;
-            float mouseY = -Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
+            float mouseY = Input.GetAxis("Mouse Y") * rotationSpeed * Time.deltaTime;
 
-            previewedTarget.transform.Rotate(Vector3.up, -mouseX, Space.Self);
-
-            float newVerticalRotation = currentVerticalRotation + mouseY;
-            newVerticalRotation = Mathf.Clamp(newVerticalRotation, -verticalRotationLimit, verticalRotationLimit);
-            float verticalRotationChange = newVerticalRotation - currentVerticalRotation;
-
-            previewedTarget.transform.Rotate(Vector3.right, verticalRotationChange, Space.Self);
-
-            currentVerticalRotation = newVerticalRotation;
+            previewedTarget.transform.Rotate(Vector3.up, -mouseX, Space.World);
+            previewedTarget.transform.Rotate(Camera.main.transform.right, mouseY, Space.World);
         }
     }
 
@@ -219,7 +210,7 @@ public void ChangeDiscoveryNow()
     {
         if (grid != null)
         {
-            grid.SetActive(!grid.activeSelf); // Pøepne aktivní stav GameObjectu
+            grid.SetActive(!grid.activeSelf); // Prepne aktivni stav GameObjectu
         }
     }
 }

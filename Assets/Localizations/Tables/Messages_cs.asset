@@ -1,0 +1,82 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: Messages_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: ea952dfbebe54d14a85e6382df5e8d6c, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 631924731904
+    m_Localized: "Tom\xE1\u0161 Nov\xE1k"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 793313161216
+    m_Localized: "PhDr. Jana Hor\xE1kov\xE1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1738969329664
+    m_Localized: "Ten tv\u016Fj n\xE1lez \u2013 mus\xED\u0161 to reportovat!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1749543170048
+    m_Localized: "Nazdar!\r\n\r\nP\u0159i\u0161ly mi ty fotky, co jsi poslal \u2013
+      to je ale kus! Nev\xEDm jak ty, ale mn\u011B p\u0159ijde, \u017Ee to m\u016F\u017Ee
+      b\xFDt n\u011Bco zaj\xEDmav\xE9ho. Takhle star\xE9 v\u011Bci se jen tak nenajdou,
+      zvl\xE1\u0161\u0165 na vlastn\xEDm pozemku.\r\n\r\nUr\u010Dit\u011B to nahl\xE1s
+      na Archeologick\xFD \xFAstav \u2013 v\xEDm, \u017Ee to zn\xED jako otrava,
+      ale stoj\xED to za to. Oni se na to pod\xEDvaj\xED a \u0159eknou ti v\xEDc.\r\n\r\nMimochodem
+      jsem ti do badatelny hodil p\xE1r kn\xED\u017Eek, co m\xE1m doma. T\u0159eba
+      se ti budou hodit p\u0159i ur\u010Dov\xE1n\xED.\r\n\r\nDej v\u011Bd\u011Bt
+      jak to dopadne!\r\n\r\nTom\xE1\u0161"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1470215106560
+    m_Localized: "Re: Hl\xE1\u0161en\xED n\xE1lezu \u2013 potvrzen\xED p\u0159ijet\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1475617370112
+    m_Localized: "Dobr\xFD den,\r\n\r\nd\u011Bkujeme za nahl\xE1\u0161en\xED n\xE1lezu.
+      V\xE1\u0161 p\u0159edm\u011Bt n\xE1s zaujal \u2013 podobn\xE9 kusy z tohoto
+      obdob\xED jsou v regionu pom\u011Brn\u011B vz\xE1cn\xE9.\r\n\r\nPokud byste
+      m\u011Bl z\xE1jem o bli\u017E\u0161\xED spolupr\xE1ci, velmi by n\xE1m pomohlo,
+      kdybyste doplnil v\xEDce informac\xED o okolnostech n\xE1lezu a p\u0159\xEDpadn\u011B
+      sestavil hypot\xE9zu o lokalit\u011B. \u010C\xEDm v\xEDce v\xEDme, t\xEDm p\u0159esn\u011Bj\u0161\xED
+      z\xE1v\u011Bry m\u016F\u017Eeme vyvodit.\r\n\r\nPro za\u010D\xE1tek doporu\u010Duji
+      prostudovat Kroniku m\u011Bsta Blatn\xE1 \u2013 archiv m\xE1te k dispozici
+      v badateln\u011B. M\u016F\u017Ee v\xE1m napov\u011Bd\u011Bt v\xEDce o historii
+      oblasti.\r\n\r\nS pozdravem,\r\nPhDr. Jana Hor\xE1kov\xE1\r\nArcheologick\xFD
+      \xFAstav"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1482949013504
+    m_Localized: "Ud\u011Blen\xED statusu Spolupracovn\xEDka \u2013 povolen\xED pr\u016Fzkumu"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1734787608576
+    m_Localized: "Dobr\xFD den,\r\n\r\ns pot\u011B\u0161en\xEDm V\xE1m oznamuji,
+      \u017Ee na z\xE1klad\u011B Va\u0161\xED hypot\xE9zy V\xE1m ud\u011Blujeme status
+      Spolupracovn\xEDka Archeologick\xE9ho \xFAstavu.\r\n\r\nVa\u0161e hypot\xE9za
+      o lokalit\u011B je velmi zaj\xEDmav\xE1 a r\xE1di bychom ji prov\u011B\u0159ili.
+      Proto V\xE1m t\xEDmto ud\u011Blujeme povolen\xED k proveden\xED detektorov\xE9ho
+      pr\u016Fzkumu na polygonu C3.\r\n\r\nPros\xEDm, aktualizujte svou interaktivn\xED
+      mapu \u2013 povolen\xED jsme zanesli do syst\xE9mu, ale bez Va\u0161\xED aktualizace
+      se oblast nezobraz\xED jako p\u0159\xEDstupn\xE1.\r\n\r\nT\u011B\u0161\xEDme
+      se na v\xFDsledky pr\u016Fzkumu!\r\n\r\nS pozdravem,\r\nPhDr. Jana Hor\xE1kov\xE1\r\nArcheologick\xFD
+      \xFAstav"
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
