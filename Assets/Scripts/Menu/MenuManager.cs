@@ -120,11 +120,11 @@ public class MenuManager : MonoBehaviour
         {
             await AuthenticationService.Instance.SignUpWithUsernamePasswordAsync(username, password);
         }
-        catch (AuthenticationException exception)
+        catch (AuthenticationException)
         {
             ShowError(ErrorMenu.Action.OpenAuthMenu, "Failed to sign you up.", "OK");
         }
-        catch (RequestFailedException exception)
+        catch (RequestFailedException)
         {
             ShowError(ErrorMenu.Action.OpenAuthMenu, "Failed to connect to the network.", "OK");
         }

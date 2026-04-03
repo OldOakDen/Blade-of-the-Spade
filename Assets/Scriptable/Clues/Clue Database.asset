@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b6e7ba7ba1134304fb2e95ab503ce4fc, type: 3}
+  m_Name: Clue Database
+  m_EditorClassIdentifier: Assembly-CSharp::ClueDatabase
+  allClues:
+  - {fileID: 11400000, guid: dad152c3a91181545ad6c7f6233ddac4, type: 2}
+  - {fileID: 11400000, guid: 071af49b5f6c80449be822b914c82d08, type: 2}
+  - {fileID: 11400000, guid: 07027650b614d0441bd3b245dd84cd7c, type: 2}
+  - {fileID: 11400000, guid: f7a9f017134a9d343a37d9a726303f45, type: 2}
+  - {fileID: 11400000, guid: 9814c8545f4a37040b49e97088e7f3c7, type: 2}

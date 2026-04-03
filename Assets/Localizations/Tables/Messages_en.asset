@@ -31,13 +31,13 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1749543170048
-    m_Localized: "Hey!\r\n\r\nGot the photos you sent \u2013 what a piece! I don't
-      know about you, but it looks pretty interesting to me. You don't just stumble
-      across stuff like that on your own land every day.\r\n\r\nYou should definitely
-      report it to the Archaeological Institute \u2013 I know it sounds like a hassle,
-      but it's worth it. They'll take a look and tell you more.\r\n\r\nBy the way,
-      I left a few books in your research lab that I had lying around. Might come
-      in handy when you're trying to identify things.\r\n\r\nLet me know how it goes!\r\n\r\nThomas"
+    m_Localized: "Hey!\n\nGot the photos you sent \u2013 what a piece! I don't know
+      about you, but it looks pretty interesting to me. You don't just stumble across
+      stuff like that on your own land every day.\n\nYou should definitely report
+      it to the Archaeological Institute \u2013 I know it sounds like a hassle, but
+      it's worth it. They'll take a look and tell you more.\n\nBy the way, I left
+      a few books in your research lab that I had lying around. Might come in handy
+      when you're trying to identify things.\n\nLet me know how it goes!\n\nThomas"
     m_Metadata:
       m_Items: []
   - m_Id: 1470215106560
@@ -45,16 +45,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1475617370112
-    m_Localized: "Dear Sir/Madam,\r\n\r\nThank you for reporting your find. The object
+    m_Localized: "Dear Sir/Madam,\n\nThank you for reporting your find. The object
       you described caught our attention \u2013 pieces from this period are relatively
-      rare in the region.\r\n\r\nIf you are interested in closer cooperation, it
-      would be very helpful if you could provide more details about the circumstances
-      of the find and possibly formulate a hypothesis about the site. The more information
-      we have, the more accurate conclusions we can draw.\r\n\r\nAs a starting point,
+      rare in the region.\n\nIf you are interested in closer cooperation, it would
+      be very helpful if you could provide more details about the circumstances of
+      the find and possibly formulate a hypothesis about the site. The more information
+      we have, the more accurate conclusions we can draw.\n\nAs a starting point,
       I recommend studying the Chronicle of Blatn\xE1 \u2013 you should have access
       to the archive in your research lab. It may tell you more about the history
-      of the area.\r\n\r\nKind regards,\r\nDr. Jana Hor\xE1kov\xE1\r\nArchaeological
-      Institute"
+      of the area.\n\nKind regards,\nDr. Jana Hor\xE1kov\xE1\nArchaeological Institute"
     m_Metadata:
       m_Items: []
   - m_Id: 1482949013504
@@ -62,15 +61,14 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 1734787608576
-    m_Localized: "Dear Sir/Madam,\r\n\r\nIt is my pleasure to inform you that, based
+    m_Localized: "Dear Sir/Madam,\n\nIt is my pleasure to inform you that, based
       on your hypothesis, we are granting you the status of Collaborator of the Archaeological
-      Institute.\r\n\r\nYour hypothesis about the site is very interesting and we
-      would like to investigate it further. We are therefore granting you permission
-      to conduct a metal detector survey in polygon C3.\r\n\r\nPlease update your
-      interactive map \u2013 the permission has been entered into the system, but
-      without your update the area will not appear as accessible.\r\n\r\nWe look
-      forward to the results of your survey!\r\n\r\nKind regards,\r\nDr. Jana Hor\xE1kov\xE1\r\nArchaeological
-      Institute"
+      Institute.\n\nYour hypothesis about the site is very interesting and we would
+      like to investigate it further. We are therefore granting you permission to
+      conduct a metal detector survey in polygon C3.\n\nPlease update your interactive
+      map \u2013 the permission has been entered into the system, but without your
+      update the area will not appear as accessible.\n\nWe look forward to the results
+      of your survey!\n\nKind regards,\nDr. Jana Hor\xE1kov\xE1\nArchaeological Institute"
     m_Metadata:
       m_Items: []
   references:

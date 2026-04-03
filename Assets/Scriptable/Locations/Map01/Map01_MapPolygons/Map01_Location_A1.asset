@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88b133a383ae8ce46a2fabdc646ee978, type: 3}
+  m_Name: Map01_Location_A1
+  m_EditorClassIdentifier: Assembly-CSharp::LocationData
+  locationID: Map01_Location_A1
+  mapID: map01
+  requiredPrestigeLevel: 1
+  locationNameKey: Map01_Location_A1_name
+  hintTextKey: Map01_Location_A1_hint
+  hypothesisNameKey: Map01_Location_A1_hyp_name
+  hypothesisDescKey: Map01_Location_A1_hyp_desc
+  requiredClues: []

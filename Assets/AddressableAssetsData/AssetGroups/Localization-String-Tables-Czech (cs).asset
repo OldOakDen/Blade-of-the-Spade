@@ -39,6 +39,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-cs
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: a62d6f414920ec44e88ddcf97a6a4d12
+    m_Address: LocationsTable_cs
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-cs
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: f51ecb71c64b0bb428ab06664acace00
+    m_Address: CluesTable_cs
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-cs
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: ed58e323d7e365d48a773b1b7f1a0c3e, type: 2}
   m_SchemaSet:

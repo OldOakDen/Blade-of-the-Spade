@@ -21,6 +21,18 @@ MonoBehaviour:
     m_SerializedLabels:
     - Locale-en
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6143b396c232e2044bebe9bcf02af652
+    m_Address: LocationsTable_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: 6befefa8352e77a498a6b63546535f19
+    m_Address: CluesTable_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 702788fe714e63847a88fe8a12c0b175
     m_Address: Messages_en
     m_ReadOnly: 1

@@ -44,9 +44,9 @@ MonoBehaviour:
   requiresAction: 1
   actionButtonLabel:
     m_TableReference:
-      m_TableCollectionName: 
+      m_TableCollectionName: GUID:3f6ba4e8ad7ecde4d9628d258a06e200
     m_TableEntryReference:
-      m_KeyId: 0
+      m_KeyId: 1809217474670592
       m_Key: 
     m_FallbackState: 0
     m_WaitForCompletion: 0

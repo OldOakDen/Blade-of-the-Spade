@@ -1,0 +1,71 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: CluesTable_cs
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: cs
+  m_SharedData: {fileID: 11400000, guid: dec453a8f0a764c43bf37698b2d51ce1, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 798573453312
+    m_Localized: "Kronika m\u011Bsta Blatn\xE1"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 884640571392
+    m_Localized: "Vlastn\xED v\xFDpisky:\\nNedalek\xE1 s\xEDdli\u0161t\u011B doby
+      bronzov\xE9 se \u010Dasto nach\xE1zely na vyv\xFD\u0161en\xFDch m\xEDstech
+      pobl\xED\u017E nepo\u010Detn\xFDch vodn\xEDch zdroj\u016F.\\n<b>P\u0159irozen\xE9
+      zdroje pitn\xE9 vody byly \u017Eivotn\u011B d\u016Fle\u017Eit\xE9.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656721428480
+    m_Localized: "Sekera z doby bronzov\xE9 z m\xE9ho pozemku"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656721428481
+    m_Localized: "Tuhle kr\xE1sku jsem na\u0161el p\u0159i kontrole m\xE9ho mal\xE9ho
+      lesa ve v\xFDvratu smrku na ji\u017En\xEDm svahu Blatnice."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656721428482
+    m_Localized: "Kniha typ\u016F archeologick\xFDch n\xE1lez\u016F"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2656721428483
+    m_Localized: "Vlastn\xED v\xFDpisky:\\nVe svahu kopce Blatnice byl nalezen fragment
+      bronzov\xE9ho srpu a st\u0159epy zdoben\xE9 keramiky. \\n<b>Srpy a sekery jsou
+      typick\xE9 s\xEDdli\u0161tn\xED n\xE1lezy.</b>"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263327354707968
+    m_Localized: "Historick\xE1 obdob\xED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263327392456704
+    m_Localized: "Vlastn\xED v\xFDpisky:\\nProzat\xEDm \u017E\xE1dn\xE9 v\xFDpisky
+      z knihy <b>\"Historick\xE1 obdob\xED\"</b>."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263327392456705
+    m_Localized: "Materi\xE1ly v historii"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 263327392456706
+    m_Localized: "Vlastn\xED v\xFDpisky:\\nProzat\xEDm \u017E\xE1dn\xE9 v\xFDpisky
+      z knihy <b>\"Materi\xE1ly v historii\"</b>."
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []

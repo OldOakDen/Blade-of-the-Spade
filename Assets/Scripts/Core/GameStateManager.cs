@@ -24,6 +24,10 @@ public class GameSaveData
     public List<MapMarkerData>        mapMarkers        = new List<MapMarkerData>();
     public List<string>               processedActions  = new List<string>();
     public int                        prestigePoints    = 0;
+    public List<string>               clueSlots              = new List<string> { null, null, null, null, null, null };
+    public List<string>               unlockedClues          = new List<string>();
+    public string                     activeLocationID       = "";
+    public string                     lastSelectedMessageID  = "";
 }
 
 public class GameStateManager : MonoBehaviour
@@ -189,5 +193,46 @@ public class GameStateManager : MonoBehaviour
     {
         if (!State.processedActions.Contains(id))
             State.processedActions.Add(id);
+    }
+
+    // -------------------------------------------------------------------------
+    // Clue Slots (6 globálních slotů sdílených přes všechny lokality)
+    // -------------------------------------------------------------------------
+
+    public void SaveClueSlots(string[] slots)
+    {
+        State.clueSlots = new List<string>(slots);
+        while (State.clueSlots.Count < 6) State.clueSlots.Add(null);
+        if (State.clueSlots.Count > 6)    State.clueSlots = State.clueSlots.GetRange(0, 6);
+    }
+
+    public string[] LoadClueSlots()
+    {
+        var result = new string[6];
+        for (int i = 0; i < 6; i++)
+            result[i] = (i < State.clueSlots.Count) ? State.clueSlots[i] : null;
+        return result;
+    }
+
+    // -------------------------------------------------------------------------
+    // Active Location
+    // -------------------------------------------------------------------------
+
+    public void   SetActiveLocation(string locationID) => State.activeLocationID = locationID;
+    public string GetActiveLocation()                  => State.activeLocationID;
+
+    public void   SetLastSelectedMessage(string id) => State.lastSelectedMessageID = id;
+    public string GetLastSelectedMessage()          => State.lastSelectedMessageID;
+
+    // -------------------------------------------------------------------------
+    // Unlocked Clues
+    // -------------------------------------------------------------------------
+
+    public bool IsClueUnlocked(string id) => State.unlockedClues.Contains(id);
+
+    public void UnlockClue(string id)
+    {
+        if (!State.unlockedClues.Contains(id))
+            State.unlockedClues.Add(id);
     }
 }
